@@ -1,0 +1,13 @@
+class Connections {
+  String groupAffiliation;
+  String relatives;
+
+  Connections({required this.groupAffiliation, required this.relatives});
+
+  factory Connections.fromJson(Map<String, dynamic> json) {
+    return Connections(
+      groupAffiliation: json['group-affiliation'],
+      relatives: json['relatives'],
+    );
+  }
+}
